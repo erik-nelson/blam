@@ -1,0 +1,12 @@
+- git:
+  local-name: octomap_msgs
+  uri: git@github.com:erik-nelson/octomap_msgs.git
+  version: develop
+- git:
+  local-name: octomap_ros
+  uri: git@github.com:erik-nelson/octomap_ros.git
+  version: develop
+- git:
+  local-name: octomap_server
+  uri: git@github.com:erik-nelson/octomap_server.git
+  version: develop

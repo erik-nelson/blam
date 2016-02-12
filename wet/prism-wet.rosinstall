@@ -1,0 +1,40 @@
+- git:
+    local-name: geometry_utils
+    uri: git@github.com:erik-nelson/geometry_utils.git
+    version: develop
+- git:
+    local-name: parameter_utils
+    uri: git@github.com:erik-nelson/parameter_utils.git
+    version: develop
+- git:
+    local-name: measurement_synchronizer
+    uri: git@github.com:erik-nelson/measurement_synchronizer.git
+    version: develop
+- git:
+    local-name: point_cloud_filter
+    uri: git@github.com:erik-nelson/point_cloud_filter.git
+    version: develop
+- git:
+    local-name: point_cloud_localization
+    uri: git@github.com:erik-nelson/point_cloud_localization.git
+    version: develop
+- git:
+    local-name: point_cloud_mapper
+    uri: git@github.com:erik-nelson/point_cloud_mapper.git
+    version: develop
+- git:
+    local-name: point_cloud_odometry
+    uri: git@github.com:erik-nelson/point_cloud_odometry.git
+    version: develop
+- git:
+    local-name: point_cloud_visualizer
+    uri: git@github.com:erik-nelson/point_cloud_visualizer.git
+    version: develop
+- git:
+    local-name: prism_slam
+    uri: git@github.com:erik-nelson/prism_slam.git
+    version: develop
+- git:
+    local-name: prism_example
+    uri: git@github.com:erik-nelson/prism_example.git
+    version: develop
