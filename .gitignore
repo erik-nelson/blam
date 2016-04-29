@@ -1,6 +1,8 @@
-# Build directories
+# ROS files and directories
 build
 devel
+src
+.catkin_workspace
 
 # Swap files
 *.swp
