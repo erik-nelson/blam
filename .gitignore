@@ -1,0 +1,34 @@
+# Build directories
+build
+devel
+
+# Swap files
+*.swp
+*.swo
+*~
+
+# Glog log files
+*.log*
+*.INFO
+
+# OSX dir files
+.DS_store
+
+# Compiled object files
+*.slo
+*.lo
+*.o
+
+# Compiled dynamic and static libraries
+*.so
+*.dylib
+*.la
+*.a
+
+# Video files
+*.mp4
+*.MOV
+*.mov
+
+# CSV files
+*.csv
