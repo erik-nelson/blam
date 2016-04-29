@@ -1,8 +1,14 @@
 # ROS files and directories
-build
-devel
-src
-.catkin_workspace
+external/build
+external/devel
+external/src
+external/build_isolated
+external/devel_isolated
+external/install_isolated
+internal/build
+internal/devel
+internal/src
+*.catkin_workspace
 
 # Swap files
 *.swp

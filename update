@@ -2,12 +2,25 @@
 
 TOP_DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-cd ${TOP_DIR}
-echo 'Creating the ROS workspace'
-if [ ! -d "${TOP_DIR}/src" ]; then
+# Compile third party packages.
+cd ${TOP_DIR}/external
+echo 'Creating a ROS workspace for third party packages.'
+if [ ! -d "./src" ]; then
   wstool init src
 fi
-wstool merge -t src blam.rosinstall
+wstool merge -t src blam-external.rosinstall
+wstool up -t src
+catkin_make_isolated --install --cmake-args -DCMAKE_BUILD_TYPE=Release
+touch ${TOP_DIR}/external/install_isolated/.catkin
+source ${TOP_DIR}/external/install_isolated/setup.bash
+
+# Compile BLAM packages.
+cd ${TOP_DIR}/internal
+echo 'Creating a ROS workspace for BLAM packages.'
+if [ ! -d "./src" ]; then
+  wstool init src
+fi
+wstool merge -t src blam-internal.rosinstall
 wstool up -t src
 catkin_make --cmake-args -DCMAKE_BUILD_TYPE=Release
-source ${TOP_DIR}/devel/setup.bash
+source ${TOP_DIR}/internal/devel/setup.bash --extend
