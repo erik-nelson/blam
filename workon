@@ -1,6 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 TOP_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-
-source ${TOP_DIR}/dry/install_isolated/setup.zsh
-source ${TOP_DIR}/wet/devel/setup.zsh --extend
+source ${TOP_DIR}/devel/setup.bash --extend

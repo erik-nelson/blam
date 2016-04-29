@@ -2,23 +2,12 @@
 
 TOP_DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-echo 'Creating the dry workspace'
-cd ${TOP_DIR}/dry
-if [ ! -d "./src" ]; then
+cd ${TOP_DIR}
+echo 'Creating the ROS workspace'
+if [ ! -d "${TOP_DIR}/src" ]; then
   wstool init src
 fi
-wstool merge -t src prism-dry.rosinstall
-wstool up -t src
-catkin_make_isolated --install --cmake-args -DCMAKE_BUILD_TYPE=Release
-touch ${TOP_DIR}/dry/install_isolated/.catkin
-source ${TOP_DIR}/dry/install_isolated/setup.bash
-
-echo 'Creating the wet workspace'
-cd ${TOP_DIR}/wet
-if [ ! -d "./src" ]; then
-  wstool init src
-fi
-wstool merge -t src prism-wet.rosinstall
+wstool merge -t src blam.rosinstall
 wstool up -t src
 catkin_make --cmake-args -DCMAKE_BUILD_TYPE=Release
-source ${TOP_DIR}/wet/devel/setup.bash
+source ${TOP_DIR}/devel/setup.bash

@@ -31,10 +31,14 @@
     uri: git@github.com:erik-nelson/point_cloud_visualizer.git
     version: develop
 - git:
-    local-name: prism_slam
-    uri: git@github.com:erik-nelson/prism_slam.git
+    local-name: blam_slam
+    uri: git@github.com:erik-nelson/blam_slam.git
     version: develop
 - git:
-    local-name: prism_example
-    uri: git@github.com:erik-nelson/prism_example.git
+    local-name: blam_example
+    uri: git@github.com:erik-nelson/blam_example.git
+    version: develop
+- git:
+    local-name: laser_loop_closure
+    uri: git@github.com:erik-nelson/laser_loop_closure.git
     version: develop
