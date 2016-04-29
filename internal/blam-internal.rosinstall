@@ -1,44 +1,44 @@
 - git:
     local-name: geometry_utils
-    uri: git@github.com:erik-nelson/geometry_utils.git
+    uri: https://github.com/erik-nelson/geometry_utils.git
     version: master
 - git:
     local-name: parameter_utils
-    uri: git@github.com:erik-nelson/parameter_utils.git
+    uri: https://github.com/erik-nelson/parameter_utils.git
     version: master
 - git:
     local-name: measurement_synchronizer
-    uri: git@github.com:erik-nelson/measurement_synchronizer.git
+    uri: https://github.com/erik-nelson/measurement_synchronizer.git
     version: master
 - git:
     local-name: point_cloud_filter
-    uri: git@github.com:erik-nelson/point_cloud_filter.git
+    uri: https://github.com/erik-nelson/point_cloud_filter.git
     version: master
 - git:
     local-name: point_cloud_localization
-    uri: git@github.com:erik-nelson/point_cloud_localization.git
+    uri: https://github.com/erik-nelson/point_cloud_localization.git
     version: master
 - git:
     local-name: point_cloud_mapper
-    uri: git@github.com:erik-nelson/point_cloud_mapper.git
+    uri: https://github.com/erik-nelson/point_cloud_mapper.git
     version: master
 - git:
     local-name: point_cloud_odometry
-    uri: git@github.com:erik-nelson/point_cloud_odometry.git
+    uri: https://github.com/erik-nelson/point_cloud_odometry.git
     version: master
 - git:
     local-name: point_cloud_visualizer
-    uri: git@github.com:erik-nelson/point_cloud_visualizer.git
+    uri: https://github.com/erik-nelson/point_cloud_visualizer.git
     version: master
 - git:
     local-name: blam_slam
-    uri: git@github.com:erik-nelson/blam_slam.git
+    uri: https://github.com/erik-nelson/blam_slam.git
     version: master
 - git:
     local-name: blam_example
-    uri: git@github.com:erik-nelson/blam_example.git
+    uri: https://github.com/erik-nelson/blam_example.git
     version: master
 - git:
     local-name: laser_loop_closure
-    uri: git@github.com:erik-nelson/laser_loop_closure.git
+    uri: https://github.com/erik-nelson/laser_loop_closure.git
     version: master

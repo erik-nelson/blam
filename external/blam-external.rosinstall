@@ -1,4 +1,4 @@
 - git:
     local-name: gtsam_ros
-    uri: git@github.com:erik-nelson/gtsam_ros.git
+    uri: https://github.com/erik-nelson/gtsam_ros.git
     version: master
