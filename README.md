@@ -33,3 +33,10 @@ roslaunch blam_example test_offline.launch
 
 An example .rviz configuration file is provided under
 `blam_example/rviz/lidar_slam.rviz`.
+
+## Dependencies
+
+***BLAM!*** relies on system installations of the following packages:
+
+* [ROS](http://wiki.ros.org/ROS/Installation)
+* [GTSAM](https://collab.cc.gatech.edu/borg/gtsam)
