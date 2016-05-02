@@ -12,8 +12,8 @@ wstool merge -t src blam-external.rosinstall
 wstool up -t src
 catkin_make_isolated --install --cmake-args -DCMAKE_BUILD_TYPE=Release
 if [ ! -d "./install_isolated" ]; then
-  touch ./install_isolated/.catkin
-  source ./install_isolated/setup.bash
+  touch ${TOP_DIR}/external/install_isolated/.catkin
+  source ${TOP_DIR}/external/install_isolated/setup.bash
 fi
 
 # Compile BLAM packages.
