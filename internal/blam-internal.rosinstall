@@ -42,3 +42,7 @@
     local-name: laser_loop_closure
     uri: https://github.com/erik-nelson/laser_loop_closure.git
     version: master
+- git:
+    local-name: pose_graph_msgs
+    uri: https://github.com/erik-nelson/pose_graph_msgs.git
+    version: master
