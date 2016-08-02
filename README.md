@@ -40,3 +40,5 @@ An example .rviz configuration file is provided under
 
 * [ROS](http://wiki.ros.org/ROS/Installation)
 * [GTSAM](https://collab.cc.gatech.edu/borg/gtsam)
+
+GTSAM in particular should be installed from source using the latest version of the develop branch from https://bitbucket.org/gtborg/gtsam. GTSAM relies on Boost, an incorrect version of which will interfere with some of ROS' packages if ROS is not upgraded to at least Indigo. ROS Indigo, in turn, relies on Ubuntu 14.04.
